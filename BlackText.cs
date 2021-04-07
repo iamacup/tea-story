@@ -1,12 +1,12 @@
 using Godot;
 using System;
 
-public class Intro : Control
+public class BlackText : Control
 {
     float lapsed = 0;
 
-    RichTextLabel label;
-    Button button;
+    public RichTextLabel label;
+    public Button button;
 
     [Signal]
     public delegate void Next();

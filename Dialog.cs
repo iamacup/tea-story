@@ -6,19 +6,22 @@ public class Dialog : Control
     RichTextLabel label;
     float lapsed = 0;
     bool running = false;
+    string ID;
 
     [Signal]
-    public delegate void TextDisplayed();
+    public delegate void TextDisplayed(string ID);
 
     public override void _Ready()
     {
        this.label = this.FindNode("Text") as RichTextLabel;
     }
 
-    public void ShowDialog(string text)
+    public void ShowDialog(string text, string ID)
     {
-        this.label.BbcodeText = text;
+        this.lapsed = 0;
         this.label.VisibleCharacters = 0;
+        this.ID = ID;
+        this.label.BbcodeText = text;
         this.running = true;
     }
 
@@ -32,7 +35,7 @@ public class Dialog : Control
             }
 
             if(this.label.VisibleCharacters >= this.label.Text.Length) {
-                EmitSignal(nameof(TextDisplayed));
+                EmitSignal(nameof(TextDisplayed), this.ID);
                 this.running = false;
             } 
         }

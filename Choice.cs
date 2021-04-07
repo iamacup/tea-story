@@ -6,6 +6,10 @@ public class Choice : Control
     HBoxContainer choiceContainer;
     PackedScene ChoiceButton;
     RichTextLabel text;
+    string ID;
+
+    [Signal]
+    public delegate void ChoicePicked(string ID, string choiceID);
 
     public override void _Ready()
     {
@@ -15,9 +19,10 @@ public class Choice : Control
         this.ChoiceButton = ResourceLoader.Load("res://ChoiceButton.tscn") as PackedScene;
     }
 
-    public void showChoices(string text, string[] choices) 
+    public void showChoices(string text, ChoiceStruct[] choices, string ID) 
     {   
-        this.text.Text = text;
+        this.ID = ID;
+        this.text.BbcodeText = text;
 
         Godot.Collections.Array children = this.choiceContainer.GetChildren();
 
@@ -30,8 +35,14 @@ public class Choice : Control
         for(int a=0; a<choices.Length; a++) 
         {
             Button button = this.ChoiceButton.Instance() as Button;
-            button.Text = choices[a];
+            button.Text = choices[a].Text;
+            button.Connect("pressed", this, "onButtonPressed", new Godot.Collections.Array() {choices[a].ID});
             this.choiceContainer.AddChild(button);
         }
+    }
+
+    public void onButtonPressed(string ID) 
+    {
+        EmitSignal(nameof(ChoicePicked), this.ID, ID);
     }
 }
