@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://fonts/text/Regular.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=11]
+size = 24
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="ChoiceButton" type="Button"]
+margin_right = 1284.0
+margin_bottom = 221.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 11 )
+text = "This is some text"

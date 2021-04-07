@@ -3,8 +3,35 @@ using System;
 
 public class Choice : Control
 {
+    HBoxContainer choiceContainer;
+    PackedScene ChoiceButton;
+    RichTextLabel text;
+
     public override void _Ready()
     {
-        // do nothing
+        this.choiceContainer = this.FindNode("ChoiceContainer") as HBoxContainer;
+        this.text = this.FindNode("Text") as RichTextLabel;
+        
+        this.ChoiceButton = ResourceLoader.Load("res://ChoiceButton.tscn") as PackedScene;
+    }
+
+    public void showChoices(string text, string[] choices) 
+    {   
+        this.text.Text = text;
+
+        Godot.Collections.Array children = this.choiceContainer.GetChildren();
+
+        for(int a=0; a<children.Count; a++) 
+        {
+            this.choiceContainer.RemoveChild(children[a] as Node);
+            (children[a] as Node).QueueFree();
+        }
+
+        for(int a=0; a<choices.Length; a++) 
+        {
+            Button button = this.ChoiceButton.Instance() as Button;
+            button.Text = choices[a];
+            this.choiceContainer.AddChild(button);
+        }
     }
 }

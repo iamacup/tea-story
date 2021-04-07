@@ -67,7 +67,7 @@ custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
 bbcode_text = "[center]Your name is [b]YouTuber Hair Max[/b]
 
-You just waked into a coffee shop to meet with [b]Vampire Skin Robin[/b][/center]"
+You just walked into a coffee shop to meet with [b]Vampire Skin Robin[/b][/center]"
 visible_characters = 0
 text = "Your name is YouTuber Hair Max
 

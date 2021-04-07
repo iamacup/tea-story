@@ -18,7 +18,14 @@ public class Chat : Control
         this.dialog.Visible = false;
         this.AddChild(this.dialog);
 
-        this.showDialog("Some text here youo crasy little popop opasd jasdh ahsdj ksahdkj hajskdhk ajd haskjd text here youo crasy little popop opasd jasdh ahsdj ksahdkj hajskdhk ajd haskjd text here youo crasy little popop opasd jasdh ahsdj ksahdkj hajskdhk ajd haskjd");
+        this.dialog.Connect("TextDisplayed", this, "onTextDisplayed");
+
+        this.showDialog("Some text here youo crakdhk ajd haskjd");
+    }
+
+    public void onTextDisplayed() {
+        string[] arr = {"Hello", "Two"};
+        this.showChoices("Some text here youo crakdhk ajd haskjd", arr);
     }
 
     public void showDialog(string text) {
@@ -31,5 +38,7 @@ public class Chat : Control
     public void showChoices(string text, string[] choices) {
         this.choice.Visible = true;
         this.dialog.Visible = false;
+
+        this.choice.showChoices(text, choices);
     }
 }
