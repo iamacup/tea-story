@@ -28,7 +28,7 @@ public class Intro : Control
     {
         if(this.label.VisibleCharacters <= this.label.Text.Length) {
             this.lapsed = this.lapsed + delta;
-            this.label.VisibleCharacters = (int)Math.Ceiling(lapsed / 0.1);
+            this.label.VisibleCharacters = (int)Math.Ceiling(lapsed / 0.05);
         }
 
         if(this.label.VisibleCharacters >= this.label.Text.Length && this.button.Visible == false) {

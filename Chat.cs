@@ -17,13 +17,19 @@ public class Chat : Control
         this.dialog = scene2.Instance() as Dialog;      
         this.dialog.Visible = false;
         this.AddChild(this.dialog);
+
+        this.showDialog("Some text here youo crasy little popop opasd jasdh ahsdj ksahdkj hajskdhk ajd haskjd text here youo crasy little popop opasd jasdh ahsdj ksahdkj hajskdhk ajd haskjd text here youo crasy little popop opasd jasdh ahsdj ksahdkj hajskdhk ajd haskjd");
     }
 
     public void showDialog(string text) {
+        this.choice.Visible = false;
+        this.dialog.Visible = true;
 
+        this.dialog.ShowDialog(text);
     }
 
     public void showChoices(string text, string[] choices) {
-
+        this.choice.Visible = true;
+        this.dialog.Visible = false;
     }
 }
