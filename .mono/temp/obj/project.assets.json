@@ -1,0 +1,48 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": []
+  },
+  "packageFolders": {
+    "/Users/iamacup/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/iamacup/Desktop/me-stuff/source/tea-story/moose.csproj",
+      "projectName": "moose",
+      "projectPath": "/Users/iamacup/Desktop/me-stuff/source/tea-story/moose.csproj",
+      "packagesPath": "/Users/iamacup/.nuget/packages/",
+      "outputPath": "/Users/iamacup/Desktop/me-stuff/source/tea-story/.mono/temp/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/iamacup/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

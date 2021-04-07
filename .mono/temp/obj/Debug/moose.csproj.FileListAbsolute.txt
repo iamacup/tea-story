@@ -1,0 +1,16 @@
+/Users/iamacup/Desktop/me-stuff/source/moose/.mono/temp/bin/Debug/moose.dll
+/Users/iamacup/Desktop/me-stuff/source/moose/.mono/temp/bin/Debug/moose.pdb
+/Users/iamacup/Desktop/me-stuff/source/moose/.mono/temp/obj/Debug/moose.csprojAssemblyReference.cache
+/Users/iamacup/Desktop/me-stuff/source/moose/.mono/temp/obj/Debug/moose.AssemblyInfoInputs.cache
+/Users/iamacup/Desktop/me-stuff/source/moose/.mono/temp/obj/Debug/moose.AssemblyInfo.cs
+/Users/iamacup/Desktop/me-stuff/source/moose/.mono/temp/obj/Debug/moose.csproj.CoreCompileInputs.cache
+/Users/iamacup/Desktop/me-stuff/source/moose/.mono/temp/obj/Debug/moose.dll
+/Users/iamacup/Desktop/me-stuff/source/moose/.mono/temp/obj/Debug/moose.pdb
+/Users/iamacup/Desktop/me-stuff/source/tea-story/.mono/temp/bin/Debug/moose.dll
+/Users/iamacup/Desktop/me-stuff/source/tea-story/.mono/temp/bin/Debug/moose.pdb
+/Users/iamacup/Desktop/me-stuff/source/tea-story/.mono/temp/obj/Debug/moose.csprojAssemblyReference.cache
+/Users/iamacup/Desktop/me-stuff/source/tea-story/.mono/temp/obj/Debug/moose.AssemblyInfoInputs.cache
+/Users/iamacup/Desktop/me-stuff/source/tea-story/.mono/temp/obj/Debug/moose.AssemblyInfo.cs
+/Users/iamacup/Desktop/me-stuff/source/tea-story/.mono/temp/obj/Debug/moose.csproj.CoreCompileInputs.cache
+/Users/iamacup/Desktop/me-stuff/source/tea-story/.mono/temp/obj/Debug/moose.dll
+/Users/iamacup/Desktop/me-stuff/source/tea-story/.mono/temp/obj/Debug/moose.pdb

@@ -1,0 +1,94 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://fonts/text/Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Intro.cs" type="Script" id=2]
+[ext_resource path="res://fonts/text/BoldItalic.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://fonts/text/Italic.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://fonts/text/Regular.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 24
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 5 )
+
+[node name="Intro" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="RichTextLabel" parent="ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -318.5
+margin_top = -33.0
+margin_right = 318.5
+margin_bottom = 33.0
+custom_fonts/bold_italics_font = SubResource( 1 )
+custom_fonts/italics_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Your name is [b]YouTuber Hair Max[/b]
+
+You just waked into a coffee shop to meet with [b]Vampire Skin Robin[/b][/center]"
+visible_characters = 0
+text = "Your name is YouTuber Hair Max
+
+You just waked into a coffee shop to meet with Vampire Skin Robin"
+fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="ColorRect"]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -169.0
+margin_top = -175.0
+margin_right = 167.0
+margin_bottom = -114.0
+custom_fonts/font = SubResource( 5 )
+text = "Let's Go!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
